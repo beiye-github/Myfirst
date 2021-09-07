@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IE主页</title>
+    <style>
+        .input_control{
+            width:50%;
+            margin:20% auto;
+        }
+        input[type="text"],#btn1,#btn2{
+            box-sizing: border-box;
+            text-align:center;
+            font-size:1.4em;
+            height:2.7em;
+            border-radius:40px;
+            border:1px solid #c8cccf;
+            color:#6a6f77;
+            -web-kit-appearance:none;
+            -moz-appearance: none;
+            display:block;
+            outline:0;
+            padding:0 1em;
+            text-decoration:none;
+            width:100%;
+        }
+        input[type="text"]:focus{
+            border:1px solid #ff7496;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <form action="http://www.baidu.com/s?wd=" onsubmit="return form_submit()">
+            <div class="input_control">
+                <label>
+                    <input type="text" name="word" id="word" class="form_input" placeholder="百度一下">
+                    <input type="submit" value="百度一下" style="float: right" hidden>
+                </label>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
